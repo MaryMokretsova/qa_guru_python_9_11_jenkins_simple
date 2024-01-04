@@ -19,7 +19,7 @@ def test_complete_todo():
     browser.element('#subjectsInput').should(be.blank).type('English').press_enter()
     browser.element('[for=hobbies-checkbox-3]').perform(command.js.scroll_into_view).click()
     browser.element('#uploadPicture').send_keys(os.path.abspath(
-        'pictures/run_girl.png'))
+        'tests/pictures/run_girl.png'))
     browser.element('#currentAddress').should(be.blank).type('Sant-Peterburg, Aleksandra Matrosova')
 
     browser.element('#react-select-3-input').type('Rajasthan').press_enter()
