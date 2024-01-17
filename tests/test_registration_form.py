@@ -1,7 +1,7 @@
 import os
 
 from selene import browser, have, be, command
-
+# https://jenkins.autotests.cloud/job/qa_guru_python_9_11_jenkins_simple/
 
 def test_complete_todo():
     browser.open('automation-practice-form')
